@@ -1,3 +1,4 @@
+// export { default as useEyowoPayment } from './EyowoHooks';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
