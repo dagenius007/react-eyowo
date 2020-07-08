@@ -1,7 +1,7 @@
 {
 	"name": "react-eyowo",
 	"description": "Eyowo integration for react js lovers",
-	"version": "1.0.5",
+	"version": "1.0.7",
 	"private": false,
 	"author": "Joshua Oluikpe",
 	"license": "MIT",
@@ -14,7 +14,9 @@
 		"react": "^16.13.1",
 		"react-dom": "^16.13.1"
 	},
-	"scripts": {},
+	"scripts": {
+		"prepublish": "rollup -c"
+	},
 	"eslintConfig": {
 		"extends": "react-app"
 	},
@@ -29,5 +31,11 @@
 			"last 1 firefox version",
 			"last 1 safari version"
 		]
+	},
+	"devDependencies": {
+		"@babel/core": "^7.10.4",
+		"@babel/preset-env": "^7.10.4",
+		"rollup": "^2.21.0",
+		"rollup-plugin-babel": "^4.4.0"
 	}
 }

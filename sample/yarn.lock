@@ -8700,10 +8700,10 @@ react-error-overlay@^6.0.7:
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-6.0.7.tgz#1dcfb459ab671d53f660a991513cb2f0a0553108"
   integrity sha512-TAv1KJFh3RhqxNvhzxj6LeT5NWklP6rDr2a0jaTfsZ5wSZWHOGeqQyejUp3xxLfPt2UpyJEcVQB/zyPcmonNFA==
 
-react-eyowo@^1.0.4:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/react-eyowo/-/react-eyowo-1.0.4.tgz#d48f7dd724e5ffa5e3d09f891d1d34fdb5c1dbe5"
-  integrity sha512-tDiQ5hH/o2yt6wAaCw9cwYhfCkDahmLtjCMF5wgDvEhzlnT1XvLvHgZMaYV/sRm+dHahR9HNrLjUpicFP8C0pQ==
+react-eyowo@1.0.6:
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/react-eyowo/-/react-eyowo-1.0.6.tgz#2039f9edb4cec5fd52cd6d18d036ca8f67aab556"
+  integrity sha512-iLeQUmXj3iEiTFo//QmVvIiuHiYLlIDB0UEeV2hm/ckLXFdmjqDcBLxhR5GVVHJVh34aoIjVIn9xqNYJDvzPoA==
   dependencies:
     "@testing-library/jest-dom" "^4.2.4"
     "@testing-library/react" "^9.3.2"

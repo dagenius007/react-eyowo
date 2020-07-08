@@ -1,5 +1,5 @@
 import React from 'react';
-import useEyowoPayment  from 'react-eyowo';
+import { useEyowoPayment } from 'react-eyowo';
 
 const App = () => {
 	const [loading, makePayment, verificationStatus] = useEyowoPayment({
