@@ -1,7 +1,7 @@
 {
 	"name": "react-eyowo",
-	"description": "A eyowo integration for react js lovers",
-	"version": "1.0.1",
+	"description": "Eyowo integration for react js lovers",
+	"version": "1.0.2",
 	"private": false,
 	"author": "Joshua Oluikpe",
 	"license": "MIT",
