@@ -2,8 +2,11 @@ import React from 'react';
 import { useEyowoPayment, generateBill } from 'react-eyowo';
 
 const App = () => {
+
 	const [billLoading, setLoading] = React.useState('');
 	const [billId, setBillId] = React.useState('');
+
+	
 	React.useEffect(() => {
 		(async function () {
 			setLoading(true);
@@ -17,6 +20,8 @@ const App = () => {
 			setLoading(false);
 		})();
 	}, []);
+
+
 	const [loading, makePayment, verificationStatus] = useEyowoPayment({
 		billId: billId,
 		email: 'joshuaoluikpe@gmail.com',

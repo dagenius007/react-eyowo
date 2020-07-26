@@ -2,7 +2,6 @@
 
 React integration for [Eyowo](https://www.eyowo.com/).
 
-[![build status](https://img.shields.io/travis/stripe/react-stripe-js/master.svg?style=flat-square)](https://travis-ci.org/stripe/react-stripe-js)
 [![npm version](https://img.shields.io/npm/v/@stripe/react-stripe-js.svg?style=flat-square)](https://www.npmjs.com/package/react-eyowo)
 
 ## Getting started
