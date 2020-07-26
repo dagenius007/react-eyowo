@@ -49,7 +49,7 @@ export default ({ billId, email, _callback, onClose, env, eyowoToken, verifyPaym
 
 	const makePayment = () => {
 		if (!isScriptAdded) {
-			console.log('Error adding script ');
+			console.log('Error adding script');
 			return null;
 		}
 		if (window && window.Eyowo) {

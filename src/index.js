@@ -1,2 +1,3 @@
 import useEyowoPayment from './EyowoHooks';
-export { useEyowoPayment };
+import { generateBill } from './billId';
+export { useEyowoPayment, generateBill };
