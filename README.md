@@ -36,13 +36,15 @@ import React from 'react';
 import { useEyowoPayment, generateBill } from 'react-eyowo';
 
 const App = () => {
-	const [billLoading, setLoading] = React.useState('');
+	const [billLoading, setLoading] = React.useState(false);
 	const [billId, setBillId] = React.useState('');
+
 	React.useEffect(() => {
 		(async function () {
 			setLoading(true);
 			try {
 				// Returns a bill with an _id required for payment
+				//better to add token to .env file
 				const bill = await generateBill('DTGFJ5N-QS84G18-NKWV9PJ-65T9Y9S', 1000);
 				setBillId(bill?._id);
 			} catch (e) {
@@ -51,15 +53,16 @@ const App = () => {
 			setLoading(false);
 		})();
 	}, []);
+
 	const [loading, makePayment, verificationStatus] = useEyowoPayment({
 		billId: billId,
-		email: 'joshuaoluikpe@gmail.com',
-		eyowoToken: 'DTGFJ5N-QS84G18-NKWV9PJ-65T9Y9S',
+		email: 'test@gmail.com',
+		eyowoToken: 'DTGFJ5N-QS84G18-NKWV9PJ-5AQ9Y9S',
 		_callback: function () {
-			console.log('hi');
+			console.log('completed');
 		},
 		onClose: function () {
-			console.log('ooooooooo');
+			console.log('closed');
 		},
 	});
 
@@ -82,18 +85,15 @@ These are varaibles to pass to the hooks function
 | `onClose`       | `Function` | This is trigged when the pop up modal is closed.                                                        |
 | `verifyPayment` | `Boolean`  | The default is true. It verifies payment in the callback function after successful transaction.         |
 
-
-
 ## Return Values
 
 These are destructed values returned from the hooks function
 
-| Name                 | Type       | Description                                                                                                                                  |
-| -------------------- | ---------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| `makePayment`        | `Function` | It triggers the pop up modal.                                                                                                                |
-| `loading`            | `Boolean`  | Loading state while verifying payment.                                                                                                       |
+| Name                 | Type       | Description                                                                                                                                   |
+| -------------------- | ---------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| `makePayment`        | `Function` | It triggers the pop up modal.                                                                                                                 |
+| `loading`            | `Boolean`  | Loading state while verifying payment.                                                                                                        |
 | `verificationStatus` | `Object`   | This returns **paymentVerificationStatus('approved' or 'failed')** and **paymentVerificationErrorMessage(error message if status is failed)** |
-
 
 ### Minimum requirements
 
@@ -107,7 +107,7 @@ No TypeScript support for now
 
 If you would like to contribute to React Eyowo,
 
-1. Clone the project!
+1. Fork the project
 2. Create your feature branch
 3. Push and Commit your changes to that feature branch
 4. Submit a pull request
