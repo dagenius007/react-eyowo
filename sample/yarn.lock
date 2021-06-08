@@ -6751,9 +6751,9 @@ memory-fs@^0.5.0:
     readable-stream "^2.0.1"
 
 merge-deep@^3.0.2:
-  version "3.0.2"
-  resolved "https://registry.yarnpkg.com/merge-deep/-/merge-deep-3.0.2.tgz#f39fa100a4f1bd34ff29f7d2bf4508fbb8d83ad2"
-  integrity sha512-T7qC8kg4Zoti1cFd8Cr0M+qaZfOwjlPDEdZIIPPB2JZctjaPM4fX+i7HOId69tAti2fvO6X5ldfYUONDODsrkA==
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/merge-deep/-/merge-deep-3.0.3.tgz#1a2b2ae926da8b2ae93a0ac15d90cd1922766003"
+  integrity sha512-qtmzAS6t6grwEkNrunqTBdn0qKwFgNWvlxUbAV8es9M7Ot1EbyApytCnvE0jALPa46ZpKDUo527kKiaWplmlFA==
   dependencies:
     arr-union "^3.1.0"
     clone-deep "^0.2.4"
@@ -8700,10 +8700,10 @@ react-error-overlay@^6.0.7:
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-6.0.7.tgz#1dcfb459ab671d53f660a991513cb2f0a0553108"
   integrity sha512-TAv1KJFh3RhqxNvhzxj6LeT5NWklP6rDr2a0jaTfsZ5wSZWHOGeqQyejUp3xxLfPt2UpyJEcVQB/zyPcmonNFA==
 
-react-eyowo@1.0.6:
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/react-eyowo/-/react-eyowo-1.0.6.tgz#2039f9edb4cec5fd52cd6d18d036ca8f67aab556"
-  integrity sha512-iLeQUmXj3iEiTFo//QmVvIiuHiYLlIDB0UEeV2hm/ckLXFdmjqDcBLxhR5GVVHJVh34aoIjVIn9xqNYJDvzPoA==
+react-eyowo@1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/react-eyowo/-/react-eyowo-1.1.2.tgz#9dd5682d12be710edc651ea658b0d3b32b4244d0"
+  integrity sha512-d9Zj5/h7vl269hqEjmTVQP90e2zI8s1tV1FfKq8i1+8HG+EHbE9kcdzY98udOwLzYNmW6uVz67WeiBDDDQ5inw==
   dependencies:
     "@testing-library/jest-dom" "^4.2.4"
     "@testing-library/react" "^9.3.2"
